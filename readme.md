@@ -43,7 +43,6 @@ Below is an example configuration file:
 
 1. Modify the backup_warden_config.json file with the necessary configuration settings.
 2. Ensure the directories specified in the watch_folder and backup_locations exist and have the appropriate permissions.
-3. Move the binary to your PC's startup folder (or wherever).
 
 ## Build
 
@@ -59,7 +58,7 @@ To build the project, you need to have Rust installed. You can install Rust from
    ```sh
    cargo build --release
    ```
-   4. The binary will be located in the target/release directory.
+   4. The binary will be located in the target/release directory which you can move to your PC's startup folder (or wherever).
 
 ## Todo: 
 - Pull in gzp crate to allow option of compressed file archving rather than full file copies.
@@ -74,6 +73,5 @@ Backup Warden is licensed under the GNU General Public License v3.0. See the LIC
 
 Contributions are welcome! Please open an issue or submit a pull request on GitHub. 
 
-### Note from the author:
 > This project is really simple so I likely won't update it much beyond quality of life improvements or the odd extra feature. 
 
