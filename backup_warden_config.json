@@ -1,8 +1,8 @@
 {
-    "watch_folder": "path/to/watch",
-    "backup_locations": [
-        "path/to/backup1",
-        "path/to/backup2"
-    ],
-    "retention_days": 30
+  "watch_folder": "C:/Users/Dylan/GameMakerProjects/Fluid Editor",
+  "backup_locations": [
+    "C:/Users/Dylan/GameMakerProjects/#local-backups",
+    "D:/Dev Projects/Game Maker Project Backups"
+  ],
+  "retention_days": 30
 }
