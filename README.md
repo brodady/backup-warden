@@ -1,18 +1,17 @@
 # Backup Warden
 
-Backup Warden is a small "no-frills," set-and-forget, disposable, redundancy file-watcher written in Rust!
+Backup Warden is a small "no-frills," set-and-forget, disposable, redundancy file-watcher written in Rust. 
+
+** Started as a learning project for Rust years ago and is probably not practical in most cases where better solutions exist **
 
 Each build of Backup Warden is a standalone watcher program with its embedded configuration, a "Warden." It monitors a specified folder for changes and, if so, creates backups every hour. It keeps a configurable rolling history (e.g. past 30 Days) and stores monthly snapshots. 
+Best used on temporary projects or can easily be included in other applications or environments as a plug and play backup system. 
 
 ### Why? 
 
 - Dead-simple.
 - Tiny executable size.
 - Only does what you tell it to.
-
-Backup Warden is best used on temporary projects or can easily be included in other applications or environments as a plug and play backup system. 
-
-All with the speed and security of rust 🦀
 
 ## Features
 
@@ -61,19 +60,11 @@ To build the project, you need to have Rust installed. You can install Rust from
    ```
    4. The binary will be located in the target/release directory.
 
-## Todo: 
-- Pull in gzp crate to allow option of compressed file archving rather than full file copies.
-- Accept an array of multiple files to watch vs just a single file. (each file stored in its own backup folder).
-- Add extra configuration options for monthly rentention period (e.g. 365 days).
-
 ## License
 
 Backup Warden is licensed under the GNU General Public License v3.0. See the LICENSE file for details.
 
 ## Contributing
 
-Contributions are welcome! Please open an issue or submit a pull request on GitHub. 
-
-### Note from the author:
-> This project is really simple so I likely won't update it much beyond quality of life improvements or the odd extra feature. 
+This project is really simple so I likely won't update it much beyond quality of life improvements or the odd extra feature however contributions are welcome! 
 
